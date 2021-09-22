@@ -18,7 +18,7 @@ namespace RPSLS
             this.chosenGesture = "";
             this.score = 0;
             this.name = "";
-            this.gestureList = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+            this.gestureList = new string[5] { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
             Console.WriteLine(gestureList);
         }
     }
