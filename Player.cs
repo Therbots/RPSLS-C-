@@ -8,18 +8,23 @@ namespace RPSLS
 {
     public class Player
     {
-        public string chosenGesture;
+        public int chosenGesture;
         public int score;
         public string name;
         public string[] gestureList;
 
-        public Player(string chosenGesture, int score, string name, string gestureList)
+        public Player(int chosenGesture, int score, string name, string gestureList)
         {
-            this.chosenGesture = "";
+            this.chosenGesture = 0;
             this.score = 0;
             this.name = "";
             this.gestureList = new string[5] { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
-            Console.WriteLine(gestureList);
         }
+
+        public void setScore()
+        {
+            score += 1;
+        }
+
     }
 }
